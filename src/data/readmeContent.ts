@@ -1,4 +1,4 @@
-<p align="center">
+export const RAW_README_MARKDOWN = `<p align="center">
   <img src="https://raw.githubusercontent.com/Vinith-s177/Vinith-s177/main/banner.svg" alt="Vinith S Banner" width="100%" />
 </p>
 
@@ -30,7 +30,7 @@ I am dedicated to writing clean, maintainable code and understanding core engine
 
 ## ⚡ Profile Highlights
 
-```
+\`\`\`
 🎓 3rd Year B.E. Computer Science Engineering
 💻 Java & Backend Development
 🧩 Data Structures & Algorithms
@@ -38,7 +38,7 @@ I am dedicated to writing clean, maintainable code and understanding core engine
 ☁️ Cloud Computing
 🚀 Building Practical Projects
 📚 Continuous Learning
-```
+\`\`\`
 
 ---
 
@@ -181,4 +181,71 @@ Explore Microsoft Copilot and developer learning resources through my contributo
 <p align="center">
   <i>"Learn • Build • Solve • Create Impact"</i><br/>
   <sub>Always learning. Always building.</sub>
-</p>
+</p>`;
+
+export interface ProjectItem {
+  id: string;
+  name: string;
+  description: string;
+  techStack: string[];
+  demoUrl?: string;
+  githubUrl?: string;
+}
+
+export const FEATURED_PROJECTS: ProjectItem[] = [
+  {
+    id: "placemate",
+    name: "PlaceMate AI",
+    description: "AI-powered career and placement preparation platform with features around DSA practice, resume analysis, mock interview preparation and career development.",
+    techStack: ["Artificial Intelligence", "Generative AI", "Web Tech", "DSA Practice"],
+    demoUrl: "https://placemate-vqgxetcj.manus.space"
+  },
+  {
+    id: "dayflow",
+    name: "DayFlow HRMS",
+    description: "Human Resource Management System project streamlining workforce data, employee attendance, and operational company workflows.",
+    techStack: ["Full-Stack", "Database Architecture", "HR Systems"],
+    githubUrl: "https://github.com/Vinith-s177/dayflow-hrms"
+  },
+  {
+    id: "aurashop",
+    name: "AuraShop AI",
+    description: "AI-enhanced e-commerce application incorporating intelligent product exploration, modern visual styling, and responsive user flow.",
+    techStack: ["Generative AI", "E-Commerce", "Frontend Tech"],
+    githubUrl: "https://github.com/Vinith-s177/aurashop-ai"
+  },
+  {
+    id: "attendance",
+    name: "Attendance Management System",
+    description: "Institutional attendance recording and reporting solution designed for structured attendance tracking and database integration.",
+    techStack: ["Java", "MySQL", "HTML", "CSS"],
+    githubUrl: "https://github.com/Vinith-s177"
+  },
+  {
+    id: "vehicle-service",
+    name: "Vehicle Service Management Application",
+    description: "Comprehensive software application built to manage vehicular maintenance requests, service logs, and client billing records.",
+    techStack: ["Java", "MySQL", "Database Management"],
+    githubUrl: "https://github.com/Vinith-s177/Vehicle-Service-Management-Application"
+  },
+  {
+    id: "ludo",
+    name: "Ludo Game",
+    description: "Classic desktop multiplayer board game implementation featuring smooth interactive player mechanics, dice rolling logic, and token rules.",
+    techStack: ["Python", "Pygame", "Game Logic"],
+    githubUrl: "https://github.com/Vinith-s177/Ludo-game"
+  }
+];
+
+export const PROFILE_INFO = {
+  name: "Vinith S",
+  username: "Vinith-s177",
+  email: "gkthana506@gmail.com",
+  tagline: "Software Engineer in the Making",
+  education: "3rd Year B.E. Computer Science Engineering Student",
+  skillsPill: "Java • DSA • AI • Cloud",
+  github: "https://github.com/Vinith-s177",
+  linkedin: "https://www.linkedin.com/in/vinith-s-982716390/",
+  leetcode: "https://leetcode.com/u/vini_2006/",
+  msAmbassadorLink: "https://learn.microsoft.com/en-in/copilot/?wt.mc_id=studentamb_648430"
+};
